@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2Operaciones1.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#FF9900" 
+               Padding="7" 
+               CornerRadius="0">
+
+            <Label Text="PM2Operaciones1" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="36"/>
+        </Frame>
+
+
+        <Label Text="Num 1:" Padding="20"/>
+        <Entry x:Name="num1" Keyboard="Numeric"/>
+
+        <Label Text="Num 2:" Padding="20"/>
+        <Entry x:Name="num2" Keyboard="Numeric"/>
+
+        <StackLayout Orientation="Horizontal"  BackgroundColor="White" Padding="2,2,2,2">
+            <Button Text="SUMA" 
+                x:Name="btnSuma"
+                WidthRequest="180"
+                Clicked="btnSuma_Clicked"
+                HorizontalOptions="Center" 
+                BackgroundColor="#FF9900" 
+                TextColor="White"
+                CornerRadius="20"
+                Margin="10"/>
+
+        <Button Text="RESTA" 
+                x:Name="btnResta"
+                WidthRequest="180"
+                Clicked="btnResta_Clicked"
+                HorizontalOptions="Center" 
+                BackgroundColor="#FF9900" 
+                TextColor="White"
+                CornerRadius="20"
+                Padding="10"
+                Margin="10"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal"  BackgroundColor="White" Padding="2,2,2,2">
+        <Button Text="MULTIPLICACIÓN" 
+                x:Name="btnMultiplicacion"
+                Clicked="btnMultiplicacion_Clicked"
+                WidthRequest="180"
+                HorizontalOptions="Center" 
+                BackgroundColor="#FF9900" 
+                TextColor="White"
+                CornerRadius="20"
+                Margin="10"/>
+
+        <Button Text="DIVISIÓN" 
+                x:Name="btnDivision"
+                WidthRequest="180"
+                Clicked="btnDivision_Clicked"
+                HorizontalOptions="Center" 
+                BackgroundColor="#FF9900" 
+                TextColor="White"
+                CornerRadius="20"
+                Margin="10"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
